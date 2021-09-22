@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "rm -rf ./.parcel-cache && rm -rf ./dev && parcel ./src/index.html --dist-dir ./dev --open",
-    "build":"rm -rf dist && parcel build ./src/index.html --public-url ./ --dist-dir ./dist"
+    "build": "rm -rf dist && parcel build ./src/index.html --public-url ./ --dist-dir ./dist"
   },
   "repository": {
     "type": "git",
@@ -19,12 +19,17 @@
   "homepage": "https://github.com/EricksonVaz/parcel-template#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
-    "bootstrap": "^4.6.0",
-    "node-sass": "^6.0.1",
-    "parcel": "^2.0.0-rc.0"
+    "bootstrap": "^4.6.0"
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.15.0",
+    "@parcel/babel-preset": "^2.0.0-alpha.2",
     "@parcel/transformer-image": "^2.0.0-rc.0",
-    "@parcel/transformer-sass": "^2.0.0-rc.0"
+    "@parcel/transformer-sass": "^2.0.0-rc.0",
+    "autoprefixer": "^10.3.5",
+    "babel-preset-env": "^1.7.0",
+    "typescript": "^4.4.3",
+    "node-sass": "^6.0.1",
+    "parcel": "^2.0.0-rc.0"
   }
 }
